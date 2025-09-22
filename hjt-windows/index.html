@@ -1,0 +1,2585 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="会捷通各平台版本发布记录文档">
+      
+      
+        <meta name="author" content="Hexmeet">
+      
+      
+        <link rel="canonical" href="https://developer.hexmeet.com/rel-notes/hjt-windows/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../hexmeet-windows/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>会捷通 Windows 版 Release Notes - 会捷通产品发布说明</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#200315210218-64-20250920" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="会捷通产品发布说明" class="md-header__button md-logo" aria-label="会捷通产品发布说明" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            会捷通产品发布说明
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              会捷通 Windows 版 Release Notes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Windows 版
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../hjt-mac/" class="md-tabs__link">
+          
+  
+  
+  macOS 版
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../hjt-android/" class="md-tabs__link">
+          
+  
+  
+  移动设备版
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../hjt-kylin-x86/" class="md-tabs__link">
+          
+  
+  
+  麒麟系统版
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../hjt-uos-amd64/" class="md-tabs__link">
+          
+  
+  
+  UOS 系统版
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="会捷通产品发布说明" class="md-nav__button md-logo" aria-label="会捷通产品发布说明" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    会捷通产品发布说明
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Windows 版
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Windows 版
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    会捷通 Windows
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    会捷通 Windows
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#200315210218-64-20250920" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.315、2.1.0.218-64 (发布日期 2025/09/20)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200258210130-64-20250524" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.258、2.1.0.130-64 (发布日期 2025/05/24)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21086-64-20250325" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.0.86-64 (发布日期 2025/03/25)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200231-20250325" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.231 (发布日期 2025/03/25)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200168-20241130" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.168 (发布日期 2024/11/30)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200157-20241115" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.157 (发布日期 2024/11/15)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20094-20240820" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.94 (发布日期 2024/08/20)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20083-20240727" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.83 (发布日期 2024/07/27)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20076-20240712" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.76 (发布日期 2024/07/12)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20059-20240614" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.59 (发布日期 2024/06/14)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20042-20240531" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.42 (发布日期 2024/05/31)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18532-20231221" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.5.32 (发布日期 2023/12/21)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18530-20231219" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.5.30 (发布日期 2023/12/19)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18379-20230925" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.3.79 (发布日期 2023/09/25)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18352-20230823" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.3.52 (发布日期 2023/08/23)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18264-20230807" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.2.64 (发布日期 2023/08/07)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18262-20230801" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.2.62 (发布日期 2023/08/01)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18252-20230711" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.2.52 (发布日期 2023/07/11)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18098-20230601" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.0.98 (发布日期 2023/06/01)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18042-20230407" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.0.42 (发布日期 2023/04/07)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17088-20230331" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.88 (发布日期 2023/03/31)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17087-20230329" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.87 (发布日期 2023/03/29)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17084-20230323" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.84 (发布日期 2023/03/23)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17082-20230301" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.82 (发布日期 2023/03/01)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17071-20221226" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.71 (发布日期 2022/12/26)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17013-20221105" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.13 (发布日期 2022/11/05)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#163135-2022924" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.3.135 (发布日期 2022/9/24)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162166-2022715" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.166 (发布日期 2022/7/15)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162156-202275" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.156 (发布日期 2022/7/5)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162145-2022528" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.145 (发布日期 2022/5/28)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160402-2022317" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.0.402 (发布日期 2022/3/17)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160348-202216" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.0.348 (发布日期 2022/1/6)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160331-20211218" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.0.331 (发布日期 2021/12/18)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15069-20211112" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.0.69 (发布日期 2021/11/12)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15028-20210904" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.0.28 (发布日期 2021/09/04)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15013-20210724" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.0.13 (发布日期 2021/07/24)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1502-20210702" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.0.2 (发布日期 2021/07/02)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141347-20210427" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.347 (发布日期 2021/04/27)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141299-20210326" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.299 (发布日期 2021/03/26)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141278-20210310" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.278 (发布日期 2021/03/10)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141257-20210222" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.257 (发布日期 2021/02/22)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141228-20210115" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.228 (发布日期 2021/01/15)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141185-20201226" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.185 (发布日期 2020/12/26)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141171-20201219" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.171 (发布日期 2020/12/19)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140282-20201017" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.0.282 (发布日期 2020/10/17)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140271-20200929" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.0.271 (发布日期 2020/09/29)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130187-20200527" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.187 (发布日期 2020/05/27)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130167-20200411" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.167 (发布日期 2020/04/11)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130132-20200304" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.132 (发布日期 2020/03/04)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130126-20200228" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.126 (发布日期 2020/02/28)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130119-20200223" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.119 (发布日期 2020/02/23)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130118-20200222" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.118（发布日期 2020/02/22)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130110-20200209" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.110（发布日期 2020/02/09)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13083-20200106" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.83（发布日期 2020/01/06)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120198-20190826" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.198（发布日期 2019/08/26)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120176-20190719" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.176 （发布日期 2019/07/19)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120167-20190625" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.167 (发布日期 2019/06/25）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12096-20190428" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.96 (发布日期 2019/04/28)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12047-20190314" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.47 (发布日期 2019/03/14)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112153-20181213" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1.2.153 (发布日期 2018/12/13)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hexmeet-windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HexMeet Windows
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paircontent-windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PairContent Windows
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    macOS 版
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            macOS 版
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hjt-mac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    会捷通 macOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    移动设备版
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            移动设备版
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hjt-android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    会捷通 Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hjt-iphone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    会捷通 iPhone
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    麒麟系统版
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            麒麟系统版
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hjt-kylin-x86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    会捷通 Kylin x86
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hjt-kylin-arm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    会捷通 Kylin Arm64
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    UOS 系统版
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            UOS 系统版
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hjt-uos-amd64/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    会捷通 UOS amd64
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hjt-uos-arm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    会捷通 UOS Arm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#200315210218-64-20250920" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.315、2.1.0.218-64 (发布日期 2025/09/20)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200258210130-64-20250524" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.258、2.1.0.130-64 (发布日期 2025/05/24)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21086-64-20250325" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1.0.86-64 (发布日期 2025/03/25)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200231-20250325" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.231 (发布日期 2025/03/25)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200168-20241130" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.168 (发布日期 2024/11/30)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200157-20241115" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.157 (发布日期 2024/11/15)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20094-20240820" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.94 (发布日期 2024/08/20)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20083-20240727" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.83 (发布日期 2024/07/27)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20076-20240712" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.76 (发布日期 2024/07/12)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20059-20240614" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.59 (发布日期 2024/06/14)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20042-20240531" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.0.0.42 (发布日期 2024/05/31)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18532-20231221" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.5.32 (发布日期 2023/12/21)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18530-20231219" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.5.30 (发布日期 2023/12/19)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18379-20230925" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.3.79 (发布日期 2023/09/25)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18352-20230823" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.3.52 (发布日期 2023/08/23)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18264-20230807" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.2.64 (发布日期 2023/08/07)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18262-20230801" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.2.62 (发布日期 2023/08/01)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18252-20230711" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.2.52 (发布日期 2023/07/11)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18098-20230601" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.0.98 (发布日期 2023/06/01)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18042-20230407" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8.0.42 (发布日期 2023/04/07)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17088-20230331" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.88 (发布日期 2023/03/31)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17087-20230329" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.87 (发布日期 2023/03/29)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17084-20230323" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.84 (发布日期 2023/03/23)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17082-20230301" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.82 (发布日期 2023/03/01)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17071-20221226" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.71 (发布日期 2022/12/26)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17013-20221105" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7.0.13 (发布日期 2022/11/05)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#163135-2022924" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.3.135 (发布日期 2022/9/24)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162166-2022715" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.166 (发布日期 2022/7/15)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162156-202275" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.156 (发布日期 2022/7/5)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#162145-2022528" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.2.145 (发布日期 2022/5/28)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160402-2022317" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.0.402 (发布日期 2022/3/17)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160348-202216" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.0.348 (发布日期 2022/1/6)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#160331-20211218" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6.0.331 (发布日期 2021/12/18)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15069-20211112" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.0.69 (发布日期 2021/11/12)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15028-20210904" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.0.28 (发布日期 2021/09/04)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15013-20210724" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.0.13 (发布日期 2021/07/24)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1502-20210702" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5.0.2 (发布日期 2021/07/02)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141347-20210427" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.347 (发布日期 2021/04/27)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141299-20210326" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.299 (发布日期 2021/03/26)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141278-20210310" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.278 (发布日期 2021/03/10)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141257-20210222" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.257 (发布日期 2021/02/22)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141228-20210115" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.228 (发布日期 2021/01/15)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141185-20201226" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.185 (发布日期 2020/12/26)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#141171-20201219" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.1.171 (发布日期 2020/12/19)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140282-20201017" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.0.282 (发布日期 2020/10/17)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#140271-20200929" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4.0.271 (发布日期 2020/09/29)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130187-20200527" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.187 (发布日期 2020/05/27)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130167-20200411" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.167 (发布日期 2020/04/11)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130132-20200304" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.132 (发布日期 2020/03/04)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130126-20200228" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.126 (发布日期 2020/02/28)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130119-20200223" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.119 (发布日期 2020/02/23)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130118-20200222" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.118（发布日期 2020/02/22)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#130110-20200209" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.110（发布日期 2020/02/09)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13083-20200106" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3.0.83（发布日期 2020/01/06)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120198-20190826" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.198（发布日期 2019/08/26)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120176-20190719" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.176 （发布日期 2019/07/19)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#120167-20190625" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.167 (发布日期 2019/06/25）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12096-20190428" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.96 (发布日期 2019/04/28)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12047-20190314" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2.0.47 (发布日期 2019/03/14)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112153-20181213" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1.2.153 (发布日期 2018/12/13)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>会捷通 Windows</h1>
+
+<h2 id="200315210218-64-20250920">2.0.0.315、2.1.0.218-64 (发布日期 2025/09/20)<a class="headerlink" href="#200315210218-64-20250920" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持1080p30双流发送</li>
+<li>支持分屏/固定轮询固定窗口位置</li>
+<li>支持对端讲话时的语音实时转写和翻译</li>
+<li>支持平台自定义的网络设备管理服务（NDM）</li>
+<li>修复其他应用窗口覆盖在被共享应用窗口上方也被共享出去的问题</li>
+<li>修复回退问题：初次登录修改密码不工作、被共享应用窗口标题遮挡共享控制栏</li>
+<li>修复在线更新版本确定安装按钮未屏蔽重复点击，导致更新失败的问题</li>
+<li>修复来电邀请接听按钮未屏蔽重复点击导致进不到视频窗口的问题</li>
+<li>修复白板被动停止后，重新发送遗留历史批注的问题</li>
+<li>修复接收白板时选定视频，取消选定后白板窗口比例错误的问题</li>
+<li>修复若干其他已知问题</li>
+</ul>
+<h2 id="200258210130-64-20250524">2.0.0.258、2.1.0.130-64 (发布日期 2025/05/24)<a class="headerlink" href="#200258210130-64-20250524" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持人脸签到</li>
+<li>智能降噪算法缺省档“高”回退至2024/10，解决MaxHub上讲话卡顿的问题</li>
+<li>x64版本去除对Visual C++ Redistributable运行时的依赖</li>
+<li>修复启动应用时多次点击图标，可能出现两个或多个会捷通同时运行的问题</li>
+<li>修复终端侧会议管理与会者列表有时刷新失败</li>
+<li>修复反复打开选择共享内容窗口桌面“屏幕1”、“白板”缩略图及文字会自动缩小的问题</li>
+<li>修正静音时文字提示的英文翻译</li>
+<li>修复白板被动停止后，重新发送白板遗留之前的白板批注</li>
+</ul>
+<h2 id="21086-64-20250325">2.1.0.86-64 (发布日期 2025/03/25)<a class="headerlink" href="#21086-64-20250325" title="Permanent link">&para;</a></h2>
+<ul>
+<li>（首个x64 (64-bit)的正式发布版本）</li>
+<li>支持 Direct3D12 渲染方式（对不支持的老显卡不可见）</li>
+<li>支持入会前弹出升级提醒，点击下载后即可安装</li>
+<li>改进降噪和啸叫抑制算法，降低CPU消耗</li>
+<li>优化文字提示的展示和淡出效果，做到足够平滑</li>
+<li>优化下载远端头像超时时长为18秒，最多重试10次</li>
+<li>优化应用覆盖安装时，默认保持原安装路径；（针对自定义安装路径）</li>
+<li>修复系统普通账户“以管理员身份运行”安装会捷通不能在桌面生成快捷方式的问题</li>
+<li>修复会议/通讯录页面在某场景未自适应最大化窗口的回退问题</li>
+<li>修复上报MAC地址有误或未上报的问题</li>
+<li>修复尝试快速发送带格式的消息内容可能会崩溃的问题</li>
+<li>修复在4K扩展屏上反复发送白板共享，白板窗口会跑到主屏的问题</li>
+<li>修复因某些MAXHUB BIOS中UUID相同，计算出的SN相同，导致应用ID重复的问题</li>
+<li>修复MAXHUB上，某输入框选中时无法自动调起系统软键盘的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="200231-20250325">2.0.0.231 (发布日期 2025/03/25)<a class="headerlink" href="#200231-20250325" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持 Direct3D12 渲染方式（对不支持的老显卡不可见）</li>
+<li>支持入会前弹出升级提醒，点击下载后即可安装</li>
+<li>改进降噪和啸叫抑制算法，降低CPU消耗</li>
+<li>优化文字提示的展示和淡出效果，做到足够平滑</li>
+<li>优化下载远端头像超时时长为18秒，最多重试10次</li>
+<li>优化应用覆盖安装时，默认保持原安装路径；（针对自定义安装路径）</li>
+<li>修复系统普通账户“以管理员身份运行”安装会捷通不能在桌面生成快捷方式的问题</li>
+<li>修复会议/通讯录页面在某场景未自适应最大化窗口的回退问题</li>
+<li>修复上报MAC地址有误或未上报的问题</li>
+<li>修复尝试快速发送带格式的消息内容可能会崩溃的问题</li>
+<li>修复在4K扩展屏上反复发送白板共享，白板窗口会跑到主屏的问题</li>
+<li>修复因某些MAXHUB BIOS中UUID相同，计算出的SN相同，导致应用ID重复的问题</li>
+<li>修复MAXHUB上，某输入框选中时无法自动调起系统软键盘的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="200168-20241130">2.0.0.168 (发布日期 2024/11/30)<a class="headerlink" href="#200168-20241130" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持啸叫抑制</li>
+<li>优化智能降噪，支持低、中、高、增强四个降噪等级</li>
+<li>优化网络检测功能，检测过程中支持自动重试，提高检测成功率</li>
+<li>修复在某设备上因DPI获取错误导致应用登录后内容显示错位的问题</li>
+<li>修复启用背景虚化时反复开关1080p设置会出现崩溃的问题</li>
+<li>修复某些操作后应用主窗口可能产生的透屏问题</li>
+<li>修复接收被屏蔽的敏感词之后切换界面语言造成崩溃的问题</li>
+<li>修复退会时遇到下载头像超时而导致的崩溃问题</li>
+</ul>
+<h2 id="200157-20241115">2.0.0.157 (发布日期 2024/11/15)<a class="headerlink" href="#200157-20241115" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持Microsoft Edge WebView2，提高应用运行稳定性，降低资源消耗</li>
+<li>支持会中“申请主持人”功能</li>
+<li>支持TLS1.3</li>
+<li>支持平台“deployId”参数，同一平台不区分登录地址实现以登录用户入会</li>
+<li>支持会议分享信息中包含多个“SIP接入地址”</li>
+<li>优化UI展示，含设置项、会议信息图标、网络状况报告等</li>
+<li>修复若干稳定性问题</li>
+<li>修复若干UI体验问题</li>
+</ul>
+<h2 id="20094-20240820">2.0.0.94 (发布日期 2024/08/20)<a class="headerlink" href="#20094-20240820" title="Permanent link">&para;</a></h2>
+<ul>
+<li>使用OpenGL渲染的设备，修正对OpenGL版本的判断，增强稳定性</li>
+<li>（非Intel Iris集显设备）增加“OpenGL ES”渲染方式</li>
+<li>修正在大分辨率设备上发送白板窗口比例错误的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="20083-20240727">2.0.0.83 (发布日期 2024/07/27)<a class="headerlink" href="#20083-20240727" title="Permanent link">&para;</a></h2>
+<ul>
+<li>优化平台服务地址和SSO域名配置的参数保存和重置规则</li>
+<li>修复在某特殊设备上可能误触发kaec导致讲话丢字的问题</li>
+<li>修复某些复杂操作后视频工具栏可能与视频窗口分离的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="20076-20240712">2.0.0.76 (发布日期 2024/07/12)<a class="headerlink" href="#20076-20240712" title="Permanent link">&para;</a></h2>
+<ul>
+<li>优化系统默认麦克风、扬声器选项显示具体设备名称</li>
+<li>优化接收白板时的批注悬浮按钮图标及位置</li>
+<li>修复IPv6环境获取不到远端头像的问题</li>
+<li>修复发送白板画批注时被挂断再次入会出现崩溃的问题</li>
+<li>修复主窗口出现嵌套错位的问题</li>
+<li>修复提交意见反馈，重复点击“确定”提交导致应用崩溃的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="20059-20240614">2.0.0.59 (发布日期 2024/06/14)<a class="headerlink" href="#20059-20240614" title="Permanent link">&para;</a></h2>
+<ul>
+<li>修复会中切换声音输入/输出设备（耳机耳麦等）视频明显卡顿的问题</li>
+<li>修复与Bass30协作时mute/unmute麦克风，视频会出现短暂卡顿的问题</li>
+<li>修复结束会议时有概率freeze无响应的问题（em logout failed）</li>
+<li>修复链接入会后，默认的平台服务地址被改写的问题</li>
+<li>修复本地麦克风audio meter会随着远端讲话而跳动的问题</li>
+<li>修复发送白板过程中被结束会议，之后退出应用出现崩溃的问题</li>
+<li>修复中文用户、中文安装路径，远端硬终端看其黑背景、无头像的问题</li>
+<li>修复内嵌画中画中的本地视频麦克风状态不更新的问题</li>
+<li>修复在英文界面下投票窗口未翻译的问题</li>
+</ul>
+<h2 id="20042-20240531">2.0.0.42 (发布日期 2024/05/31)<a class="headerlink" href="#20042-20240531" title="Permanent link">&para;</a></h2>
+<ul>
+<li>会议中参会者关闭摄像头的显示方式优化</li>
+<li>支持客户端单设备登录</li>
+<li>会议分享信息支持携带直播地址和密码</li>
+<li>支持登出后或自动登录失败时自动清除密码</li>
+<li>支持以镜像方式显示本地视频</li>
+<li>修复共享应用窗口自动暂停需要手动继续的问题</li>
+<li>修复最大化窗口退会，再次入会顶部控制栏错位的问题</li>
+<li>修复发起共享电脑声音时，远端可能听到短暂噪声的问题</li>
+<li>修复若干已知问题</li>
+</ul>
+<h2 id="18532-20231221">1.8.5.32 (发布日期 2023/12/21)<a class="headerlink" href="#18532-20231221" title="Permanent link">&para;</a></h2>
+<ul>
+<li>修复缺少Visual Studio 2019 运行时依赖文件导致应用不能正常启动的问题</li>
+<li>修复使用中文安装路径，应用平台服务地址为空的问题</li>
+</ul>
+<h2 id="18530-20231219">1.8.5.30 (发布日期 2023/12/19)<a class="headerlink" href="#18530-20231219" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>由于  Irix Xe 显卡驱动的问题，在使用该显卡的设备上，会议中切换至全屏可能出现崩溃。如果遇到该问题，建议 ：
+1. 安装 英特尔® Graphics Driver：31.0.101.4830 。驱动下载地址 https://www.intel.cn/content/www/cn/zh/download/780185/intel-data-center-gpu-flex-series-windows.html
+2. 如果安装了上述驱动没有解决问题，建议将渲染方式改为 QImage （改变渲染方式后，需要完全退出应用，并重新启动后生效）</p>
+</blockquote>
+<ul>
+<li>优化会议管理页面加载体验，入会后即自动加载页面</li>
+<li>优化应用后台运行时执行卸载先自行退出</li>
+<li>优化接收共享时设置1x2，双击远端视频支持选定</li>
+<li>优化接收白板时支持“退出批注”操作</li>
+<li>优化全屏界面时去除边线</li>
+<li>修复退会后从任务栏恢复的最大化窗口为黑屏的问题</li>
+<li>修复最小化窗口后点击系统托盘图标无法恢复窗口的问题</li>
+<li>修复小方数会议中传统主讲和新型主讲间切换不工作的问题</li>
+<li>修复启动窗口边框有重影的问题</li>
+<li>修复回退问题：进入会议时全屏显示不工作</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="18379-20230925">1.8.3.79 (发布日期 2023/09/25)<a class="headerlink" href="#18379-20230925" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持关闭窗口自动退到系统托盘，双击图标恢复窗口</li>
+<li>支持接收双流时设置1x2布局</li>
+<li>调整渲染方式的次序</li>
+<li>支持用户名带空格自动截取</li>
+<li>修复会控设置画廊且允许终端切换分屏，终端侧无法切换传统主讲的问题</li>
+<li>修复接收白板时选定视频，尝试切换布局无“已选定”提示</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="18352-20230823">1.8.3.52 (发布日期 2023/08/23)<a class="headerlink" href="#18352-20230823" title="Permanent link">&para;</a></h2>
+<ul>
+<li>登录界面改进，统一云和私有部署入口</li>
+<li>登录界面增加“保持登录”开关</li>
+<li>支持会场站点名称样式由会议统一管控</li>
+<li>支持会议延时提醒，增加延时操作入口</li>
+<li>支持消息敏感词过滤（匹配平台v2.0.0）</li>
+<li>会议录制控制优化，工具栏增加录制入口</li>
+<li>优化呼叫历史展示会议名称</li>
+<li>会议锁定状态展示优化</li>
+<li>入会过程界面过渡体验优化</li>
+<li>修复若干已知问题</li>
+</ul>
+<h2 id="18264-20230807">1.8.2.64 (发布日期 2023/08/07)<a class="headerlink" href="#18264-20230807" title="Permanent link">&para;</a></h2>
+<ul>
+<li>修复没有连接麦克风时呼入会议概率遇到闪退的问题</li>
+</ul>
+<h2 id="18262-20230801">1.8.2.62 (发布日期 2023/08/01)<a class="headerlink" href="#18262-20230801" title="Permanent link">&para;</a></h2>
+<ul>
+<li>新的回声消除算法</li>
+<li>修复接收消息后视频窗口易失去焦点的问题</li>
+<li>修复背景图片被异常删除后导致App崩溃的问题</li>
+</ul>
+<h2 id="18252-20230711">1.8.2.52 (发布日期 2023/07/11)<a class="headerlink" href="#18252-20230711" title="Permanent link">&para;</a></h2>
+<ul>
+<li>共享工具栏增加消息、分组讨论、参与投票、会议信息、统计信息等的入口</li>
+<li>视图布局选择优化，布局样式悬浮窗弹出一键选择</li>
+<li>接收双流或白板时支持选定视频为主讲视图，双流固定在悬浮画中画</li>
+<li>增加设备性能不足影响体验的提示</li>
+<li>适配平台会议分享设置</li>
+<li>会议中水印优化，对比度提高，在浅色视频或内容接收时更明显</li>
+<li>麦克风状态优化：麦克风图标常驻、增加开启状态时的动态效果</li>
+<li>会中语音激励时“正在发言”提示更新图标</li>
+<li>优化工具栏上或顶部状态栏当鼠标在其上时常驻，鼠标移开后自动隐藏</li>
+<li>视频窗口限定最小尺寸，并可拖拽/拉伸大小</li>
+<li>优化悬浮视频窗口的最小尺寸</li>
+<li>优化接收白板时可收起白板批注工具栏</li>
+<li>优化网络状况不好时的提示方式和频率，网络重连、网络不佳提示</li>
+<li>入会时提示当前正在使用的麦克风</li>
+<li>修复若干已知问题</li>
+</ul>
+<h2 id="18098-20230601">1.8.0.98 (发布日期 2023/06/01)<a class="headerlink" href="#18098-20230601" title="Permanent link">&para;</a></h2>
+<ul>
+<li>优化在恶劣网络环境中应用自身操作或会议操作可能导致卡顿的问题</li>
+<li>优化接收内容共享时视频小窗口的分辨率上限，不挤占主窗口带宽</li>
+<li>优化90p视频窗口边框宽度，缩短窗口间距</li>
+<li>优化会中打开虚拟背景设置时不影响本地视频</li>
+<li>优化入会在成功获取会议信息后才展示info图标</li>
+<li>优化会中复制会议信息空白项不予展示</li>
+<li>优化入会时工具栏与视频同步展示，不再滞后</li>
+<li>修复在研讨会中某些按钮展示相关的已知问题</li>
+<li>修复反复操作麦克风时可能误弹解除静音确认框的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="18042-20230407">1.8.0.42 (发布日期 2023/04/07)<a class="headerlink" href="#18042-20230407" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持网络研讨会</li>
+<li>优化启动窗口、主窗口和视频窗口在各分辨率设备下的尺寸</li>
+<li>优化应用窗口、视频窗口在不同尺寸屏幕间拖动时自适应窗口尺寸</li>
+<li>优化消息权限设置项自动随角色变更</li>
+<li>优化发起白板共享时不向远端发送瞬间的桌面</li>
+<li>优化共享白板窗口最小化后对远端内容接收方展示共享暂停</li>
+<li>优化签到窗口显示签到标题</li>
+<li>优化网络检测时应用的稳定性</li>
+<li>修复会中退后台后，本地视频窗口单独在最前端展示，视频窗口不能唤出的问题</li>
+<li>修复安装完毕自动启动应用后无法使用会议链接调起App入会的问题</li>
+<li>修复发起白板共享鼠标静止不动导致共享控制栏不自动消失的问题</li>
+<li>修复启动后首次入会可能会出现自动画廊视图的问题</li>
+<li>修复语音入会不能展示字幕的回退问题</li>
+<li>修复作为主会场结束内容分享时自动变成会议分屏的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="17088-20230331">1.7.0.88 (发布日期 2023/03/31)<a class="headerlink" href="#17088-20230331" title="Permanent link">&para;</a></h2>
+<ul>
+<li>修复更新安装可能失败的问题</li>
+</ul>
+<h2 id="17087-20230329">1.7.0.87 (发布日期 2023/03/29)<a class="headerlink" href="#17087-20230329" title="Permanent link">&para;</a></h2>
+<ul>
+<li>修复视/音频窗口返回前台时字幕自动消失的问题</li>
+</ul>
+<h2 id="17084-20230323">1.7.0.84 (发布日期 2023/03/23)<a class="headerlink" href="#17084-20230323" title="Permanent link">&para;</a></h2>
+<ul>
+<li>优化退会后号码输入框不再展示会议号码</li>
+<li>修复安装更新时遇到原进程驻留导致更新安装失败的问题</li>
+</ul>
+<h2 id="17082-20230301">1.7.0.82 (发布日期 2023/03/01)<a class="headerlink" href="#17082-20230301" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持虚拟背景和背景虚化</li>
+<li>音频处理改进</li>
+<li>修复在Windows 7上加载图标展示不全的问题</li>
+</ul>
+<h2 id="17071-20221226">1.7.0.71 (发布日期 2022/12/26)<a class="headerlink" href="#17071-20221226" title="Permanent link">&para;</a></h2>
+<ul>
+<li>优化互动白板和会中消息的接收、发送</li>
+<li>修复加入新会或进入分组会议后录制/直播图标始终展示的问题</li>
+<li>修复跨可用区设置消息权限不生效的问题</li>
+<li>修复改名窗口被其他窗口遮挡的问题</li>
+<li>修复接收白板时本地麦克风状态图标在前15秒展示错误的问题</li>
+<li>修复消息窗口和批注控制栏易被白板窗口遮挡的问题</li>
+<li>修复画大量白板批注时可能发生崩溃的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="17013-20221105">1.7.0.13 (发布日期 2022/11/05)<a class="headerlink" href="#17013-20221105" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持新型交互白板</li>
+<li>渲染方式优化，支持OpenGL渲染，降低CPU利用率</li>
+<li>选定视频优化，所有布局下均可双击选定视频</li>
+<li>优化启动窗口和主窗口在低分辨率设备下的尺寸</li>
+<li>优化会中改名后，消息名称及时变更</li>
+<li>投票窗口优化，支持新投票立即更新</li>
+<li>优化登出状态网络检测服务器的获取</li>
+<li>修复发起随机号码的会议时自动重拨不符合平台配置的问题</li>
+<li>修复窗口缩放时字体瞬时拉伸的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="163135-2022924">1.6.3.135 (发布日期 2022/9/24)<a class="headerlink" href="#163135-2022924" title="Permanent link">&para;</a></h2>
+<ul>
+<li>UI和UX的整体改进</li>
+<li>支持根据CPU占用情况，自动调节视频能力的功能</li>
+<li>视频编、解码方式的改进，当前去除硬编、解码</li>
+<li>优化用户及入会名称的长度上限，统一32个字符以内</li>
+<li>优化静止长字幕的展示方式，无法展示完全时做到左对齐</li>
+<li>优化以视频窗口宽度来适应展示用户的名称长度</li>
+<li>修复某些非16:9的设备，在视频设置中摄像头预览未铺满窗口的问题</li>
+<li>修复登出状态进入设置，在退出时可能发生崩溃的问题</li>
+<li>修复应用切后台之后，在某种场景下发生自动抢焦点的问题</li>
+<li>修复“暂停共享”在Windows 7上不工作</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="162166-2022715">1.6.2.166 (发布日期 2022/7/15)<a class="headerlink" href="#162166-2022715" title="Permanent link">&para;</a></h2>
+<ul>
+<li>修复同时接收白板和投票/签到时可能导致的崩溃问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="162156-202275">1.6.2.156 (发布日期 2022/7/5)<a class="headerlink" href="#162156-202275" title="Permanent link">&para;</a></h2>
+<ul>
+<li>修复手机号-验证码登录后未获得功能项的问题</li>
+<li>修正媒体统计信息中的竖屏视频分辨率</li>
+<li>修复在接收消息后视频会失去焦点的问题</li>
+<li>修复结束白板、内容分享后未恢复原布局的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="162145-2022528">1.6.2.145 (发布日期 2022/5/28)<a class="headerlink" href="#162145-2022528" title="Permanent link">&para;</a></h2>
+<ul>
+<li>新增对服务端侧如下功能开关的支持：允许普通用户登录自服务、会议分享权限、初次登录修改密码、启动双因子登录、切换语音模式</li>
+<li>优化会中“邀请”按钮的可见性，仅对主持人用户展示</li>
+<li>优化特殊场景的处理：服务端可用区停用后App尝试登录的提示</li>
+<li>修复共享扩展屏时共享控制栏未随动到扩展屏的问题</li>
+<li>修复不能识别第二个相同摄像头的问题</li>
+<li>修复私密消息在某些特殊情况下出现重复的问题</li>
+<li>修复通过平台中心区呼叫不存在的会议时文字提示不明确的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="160402-2022317">1.6.0.402 (发布日期 2022/3/17)<a class="headerlink" href="#160402-2022317" title="Permanent link">&para;</a></h2>
+<ul>
+<li>新增入会麦克风/摄像头默认状态的通用设置</li>
+<li>修复系统时间误差较大导致App注册失败的问题</li>
+<li>修复被大量与会者的会议邀请时可能发生崩溃的问题</li>
+<li>优化修改密码后实时更新登录页面的密码</li>
+<li>优化接听和挂断按钮的位置</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="160348-202216">1.6.0.348 (发布日期 2022/1/6)<a class="headerlink" href="#160348-202216" title="Permanent link">&para;</a></h2>
+<ul>
+<li>优化用户体验：缩短挂断会议时的释放时长</li>
+<li>优化用户体验：会控全体解除静音时不再弹出解除静音确认框</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="160331-20211218">1.6.0.331 (发布日期 2021/12/18)<a class="headerlink" href="#160331-20211218" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持终端侧发起网络检测功能</li>
+<li>支持绑定微信方式登录云服务</li>
+<li>支持使用手机号码-验证码登录私有部署服务</li>
+<li>支持密码复杂度和密码过期提醒</li>
+<li>支持入会时选择语音方式入会</li>
+<li>支持发起随机号码的快速会议</li>
+<li>会议信息的展示优化</li>
+<li>会议管理会控功能增强和界面优化</li>
+<li>支持麦克风静音时不影响共享电脑音频</li>
+<li>会中邀请界面优化</li>
+<li>支持会议主持人发起分组讨论功能</li>
+<li>支持共享应用白名单</li>
+<li>支持智能识别硬件编解码能力</li>
+<li>增强媒体统计信息数据展示</li>
+<li>优化通讯录联系人的在线状态展示</li>
+<li>修复若干其它问题</li>
+</ul>
+<h2 id="15069-20211112">1.5.0.69 (发布日期 2021/11/12)<a class="headerlink" href="#15069-20211112" title="Permanent link">&para;</a></h2>
+<ul>
+<li>最低发送视频分辨率从90p调整到128p，解决VE880解码APP 90p画面卡住的问题</li>
+<li>修复若干其它问题</li>
+</ul>
+<h2 id="15028-20210904">1.5.0.28 (发布日期 2021/09/04)<a class="headerlink" href="#15028-20210904" title="Permanent link">&para;</a></h2>
+<ul>
+<li>登录界面优化</li>
+<li>对集成AD企业通讯录的用户，支持SSO登录</li>
+<li>支持网络状态报告</li>
+<li>意见反馈联系方式改为必填项</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="15013-20210724">1.5.0.13 (发布日期 2021/07/24)<a class="headerlink" href="#15013-20210724" title="Permanent link">&para;</a></h2>
+<ul>
+<li>翻页按钮在主会场模式展示错误，目前主会场模式下所有终端都不让翻页</li>
+<li>解决加入会议号码输入框清空后，无法选中第一个历史记录的问题</li>
+<li>解决单独窗口接收内容不展示水印的问题</li>
+<li>错误码“4079”翻译为“该热线尚无座席在线”</li>
+</ul>
+<h2 id="1502-20210702">1.5.0.2 (发布日期 2021/07/02)<a class="headerlink" href="#1502-20210702" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持设置参会者姓名大小</li>
+<li>支持启用等候室，等候室终端被准入后才可入会</li>
+<li>支持发起签到，App侧点击确定确认签到</li>
+<li>支持参会成员水印，视频、内容窗口，及语音均展示终端水印</li>
+<li>支持设置聊天范围，允许自由聊天、仅允许公开聊天和全体成员禁言</li>
+<li>支持视频布局类型：1TP4H、1TP5H、1TP6H，支持1P11</li>
+<li>支持共享文档及电脑应用程序</li>
+<li>支持暂停和恢复共享</li>
+<li>修复若干其它问题</li>
+</ul>
+<h2 id="141347-20210427">1.4.1.347 (发布日期 2021/04/27)<a class="headerlink" href="#141347-20210427" title="Permanent link">&para;</a></h2>
+<ul>
+<li>改善高丢包率时的视频质量</li>
+</ul>
+<h2 id="141299-20210326">1.4.1.299 (发布日期 2021/03/26)<a class="headerlink" href="#141299-20210326" title="Permanent link">&para;</a></h2>
+<ul>
+<li>解决选定视频不工作的问题</li>
+<li>改善高丢包率情况下的视频卡顿</li>
+<li>优化视频编码算法，有效节省带宽</li>
+</ul>
+<h2 id="141278-20210310">1.4.1.278 (发布日期 2021/03/10)<a class="headerlink" href="#141278-20210310" title="Permanent link">&para;</a></h2>
+<ul>
+<li>改进音视频质量</li>
+</ul>
+<h2 id="141257-20210222">1.4.1.257 (发布日期 2021/02/22)<a class="headerlink" href="#141257-20210222" title="Permanent link">&para;</a></h2>
+<ul>
+<li>更新消息功能 SDK 和相关实现，改进版本兼容性处理机制 </li>
+</ul>
+<h2 id="141228-20210115">1.4.1.228 (发布日期 2021/01/15)<a class="headerlink" href="#141228-20210115" title="Permanent link">&para;</a></h2>
+<ul>
+<li>修复使用高分辨率显示器共享屏幕时，其他与会者看不到屏幕内容的问题</li>
+<li>修复上传日志可能失败的问题</li>
+<li>修复若干其他问题</li>
+</ul>
+<h2 id="141185-20201226">1.4.1.185 (发布日期 2020/12/26)<a class="headerlink" href="#141185-20201226" title="Permanent link">&para;</a></h2>
+<ul>
+<li>调整编码器设置，解决可能引起M16解码异常显示蓝屏或者花屏的问题</li>
+</ul>
+<h2 id="141171-20201219">1.4.1.171 (发布日期 2020/12/19)<a class="headerlink" href="#141171-20201219" title="Permanent link">&para;</a></h2>
+<ul>
+<li>会议中消息功能（包括新消息提示、新消息数提示、私密消息）</li>
+<li>音频设备支持选择 “系统默认” 设备，选择该设置后，使用系统设置的默认麦克风和扬声器设备</li>
+<li>会议中插拔音视频设备行为优化 (设备插入/移除后，设备列表自动更新，不需要重新入会即可选择新插入设备)</li>
+<li>支持视频翻页功能</li>
+<li>优化平台 token 失效保护</li>
+<li>解决若干其他问题</li>
+</ul>
+<h2 id="140282-20201017">1.4.0.282 (发布日期 2020/10/17)<a class="headerlink" href="#140282-20201017" title="Permanent link">&para;</a></h2>
+<ul>
+<li>解决加入带密码会议等若干问题</li>
+</ul>
+<h2 id="140271-20200929">1.4.0.271 (发布日期 2020/09/29)<a class="headerlink" href="#140271-20200929" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>UI 全面更新为 Qt 技术实现</p>
+</li>
+<li>
+<p>减少安装依赖</p>
+</li>
+<li>
+<p>用户体验改进</p>
+</li>
+<li>
+<p>通话中设备选择，不再引起麦克风采集短暂中断</p>
+</li>
+<li>接收共享默认使用相同窗口</li>
+<li>接收共享可以选择两种布局</li>
+<li>全新设计的共享工具栏</li>
+<li>发送共享支持设置流畅度优先</li>
+<li>
+<p>工具栏支持扬声器音量调节</p>
+</li>
+<li>
+<p>支持实验室功能 - 美颜和亮度增强</p>
+</li>
+<li>
+<p>支持参与投票功能</p>
+</li>
+<li>
+<p>画廊模式最高支持 5x5 分屏</p>
+</li>
+</ul>
+<h2 id="130187-20200527">1.3.0.187 (发布日期 2020/05/27)<a class="headerlink" href="#130187-20200527" title="Permanent link">&para;</a></h2>
+<ul>
+<li>带宽检测和调整算法优化</li>
+<li>修正偶尔对搜狗输入法不兼容的问题</li>
+<li>解决若干其他问题</li>
+</ul>
+<h2 id="130167-20200411">1.3.0.167 (发布日期 2020/04/11)<a class="headerlink" href="#130167-20200411" title="Permanent link">&para;</a></h2>
+<ul>
+<li>稳定性改进</li>
+<li>挂断时确认提示</li>
+<li>加密呼叫顶部状态栏显示锁图标</li>
+<li>增加设置选项: 进入会议时自动全屏 （默认关）</li>
+</ul>
+<h2 id="130132-20200304">1.3.0.132 (发布日期 2020/03/04)<a class="headerlink" href="#130132-20200304" title="Permanent link">&para;</a></h2>
+<ul>
+<li>会议结束或异常断开，提示原因</li>
+<li>解决若干其他问题</li>
+</ul>
+<h2 id="130126-20200228">1.3.0.126 (发布日期 2020/02/28)<a class="headerlink" href="#130126-20200228" title="Permanent link">&para;</a></h2>
+<ul>
+<li>解决若干已知问题</li>
+<li>优化会议管理刷新机制</li>
+</ul>
+<h2 id="130119-20200223">1.3.0.119 (发布日期 2020/02/23)<a class="headerlink" href="#130119-20200223" title="Permanent link">&para;</a></h2>
+<ul>
+<li>解决平台升级到 1.3.0.367 后，举手功能失效的问题</li>
+<li>解决若干其他问题</li>
+</ul>
+<h2 id="130118-20200222">1.3.0.118（发布日期 2020/02/22)<a class="headerlink" href="#130118-20200222" title="Permanent link">&para;</a></h2>
+<ul>
+<li>用户体验改进，发送共享屏幕时，不再自动隐藏本地视频窗口组</li>
+</ul>
+<h2 id="130110-20200209">1.3.0.110（发布日期 2020/02/09)<a class="headerlink" href="#130110-20200209" title="Permanent link">&para;</a></h2>
+<ul>
+<li>解决通过链接入会，关闭摄像头导致本地视频窗口黑屏的问题</li>
+<li>解决作为被叫时，呼叫振铃时显示 duration 非 0 的问题</li>
+<li>解决若干其他问题</li>
+</ul>
+<h2 id="13083-20200106">1.3.0.83（发布日期 2020/01/06)<a class="headerlink" href="#13083-20200106" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持通讯录功能</li>
+<li>支持点对点 (P2P) 呼叫功能</li>
+<li>支持通话中切换为语音通话模式</li>
+<li>支持与会者改名功能</li>
+<li>支持传统自动分屏样式</li>
+<li>优化客户端本地静音和平台会控静音一致性体验</li>
+<li>可以通过设置关闭会议中的提示信息显示</li>
+</ul>
+<h2 id="120198-20190826">1.2.0.198（发布日期 2019/08/26)<a class="headerlink" href="#120198-20190826" title="Permanent link">&para;</a></h2>
+<ul>
+<li>改进音视频质量</li>
+<li>解决若干其他问题</li>
+</ul>
+<h2 id="120176-20190719">1.2.0.176 （发布日期 2019/07/19)<a class="headerlink" href="#120176-20190719" title="Permanent link">&para;</a></h2>
+<ul>
+<li>解决某些场景呼叫失败的问题</li>
+<li>解决若干其他问题</li>
+</ul>
+<h2 id="120167-20190625">1.2.0.167 (发布日期 2019/06/25）<a class="headerlink" href="#120167-20190625" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持画廊模式最多 4x4 分屏</li>
+<li>支持通过设置关闭网络状态提示信息</li>
+<li>支持不登录时进入设置页面</li>
+<li>本地视频窗口显示本地会场名称</li>
+<li>改进音视频质量</li>
+<li>修复若干问题</li>
+</ul>
+<h2 id="12096-20190428">1.2.0.96 (发布日期 2019/04/28)<a class="headerlink" href="#12096-20190428" title="Permanent link">&para;</a></h2>
+<ul>
+<li>音视频质量改进</li>
+<li>工具栏会议管理按钮显示与会者数量</li>
+<li>匿名入会时可以输入用于会议中显示的名字</li>
+<li>会议进行中，防止电脑不操作时进入待机状态</li>
+<li>允许没有麦克风的电脑参与会议</li>
+</ul>
+<h2 id="12047-20190314">1.2.0.47 (发布日期 2019/03/14)<a class="headerlink" href="#12047-20190314" title="Permanent link">&para;</a></h2>
+<ul>
+<li>若干音视频质量改进</li>
+<li>支持直播状态显示</li>
+<li>改善网络状态的指示信息</li>
+</ul>
+<h2 id="112153-20181213">1.1.2.153 (发布日期 2018/12/13)<a class="headerlink" href="#112153-20181213" title="Permanent link">&para;</a></h2>
+<ul>
+<li>支持多可用区统一登录</li>
+<li>支持会场名称显示或自动隐藏设置</li>
+<li>支持录制状态显示</li>
+<li>音视频质量改进</li>
+<li>非登录状态可以发送诊断日志</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sidebars", "navigation.tabs"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
